@@ -27,7 +27,7 @@ const CategoryNavMobile = ({ setCatnavMobile }) => {
               className='uppercase font-medium'
               key={category.id}
             >
-              {category.attributes.title} Software
+              {category.attributes.title} 
             </Link>
           );
         })}

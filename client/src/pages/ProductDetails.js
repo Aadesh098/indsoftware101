@@ -34,7 +34,7 @@ const ProductDetails = () => {
           <div className='flex-1 bg-primary p-12 xl:p-20 rounded-lg flex flex-col justify-center'>
             {/* category title */}
             <div className='uppercase text-accent text-lg font-medium mb-2'>
-              {data[0].attributes.categories.data[0].attributes.title} Software
+              {data[0].attributes.categories.data[0].attributes.title} 
             </div>
             {/* title */}
             <h2 className='h2 mb-4'>{data[0].attributes.title}</h2>
