@@ -25,7 +25,7 @@ const Footer = () => {
         </form>
         {/* links */}
         <div className='text-base text-white/60 flex gap-x-6 capitalize max-w-max mx-auto mb-9'>
-          <a href='www.google.com' className='hover:text-white transition-all'>
+          <a href='/return' className='hover:text-white transition-all'>
             Returns policy
           </a>
           <a href='/contactUs' className='hover:text-white transition-all'>

@@ -10,6 +10,7 @@ import Search from './pages/Search';
 import Vision from './pages/Vision';
 import MyProfile from './pages/MyProfile';
 import ContactUs from './pages/ContactUs';
+import Return from './pages/Return'
 
 // components
 import Header from './components/Header';
@@ -37,6 +38,7 @@ const router = createBrowserRouter([
       { path: '/vision', element: <Vision /> },
       { path: '/myprofile', element: <MyProfile /> },
       { path: '/contactUs', element: <ContactUs /> },
+      { path: '/return', element: <Return /> },
     ],
   },
 ]);
