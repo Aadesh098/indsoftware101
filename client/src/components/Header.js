@@ -53,8 +53,11 @@ const Header = () => {
               <Link to={'/products/10'}>Products</Link>
             </div>
 
-            <div className='hidden xl:flex uppercase m-4'>
+            {/* <div className='hidden xl:flex uppercase m-4'>
              <Link to={'/myprofile'}>Profile</Link>
+            </div> */}
+            <div className='hidden xl:flex uppercase m-4'>
+             <Link to={'/contactus'}>Contact Us</Link>
             </div>
             {/* cart icon */}
             <div
