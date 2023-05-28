@@ -15,6 +15,7 @@
     "@strapi/strapi": "4.9.1",
     "better-sqlite3": "8.0.1",
     "dotenv": "^16.0.3",
+    "pg": "^8.11.0",
     "stripe": "^12.1.1"
   },
   "author": {
