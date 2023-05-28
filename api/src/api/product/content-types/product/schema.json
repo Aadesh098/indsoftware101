@@ -41,6 +41,19 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "products"
+    },
+    "description2": {
+      "type": "text"
+    },
+    "video": {
+      "type": "customField",
+      "customField": "plugin::video-field.video"
+    },
+    "shortd": {
+      "type": "string"
+    },
+    "urlprop": {
+      "type": "string"
     }
   }
 }
