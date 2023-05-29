@@ -8,15 +8,13 @@ import Qty from '../components/Qty';
 // context
 import { CartContext } from '../context/CartContext';
 
-const backendURL = process.env.REACT_APP_PUBLIC_STRAPI_URL;
-
 const CartItem = ({ item }) => {
   const { removeFromCart } = useContext(CartContext);
   return (
     <div className='flex gap-x-8'>
       <Link to={`product/${item.id}`} className='w-[70px] h-[70px]'>
         <img
-          src={`${backendURL}${item.attributes.image.data.attributes.url}`}
+          src={`https://indsoftwareproduction-82wmn.ondigitalocean.app${item.attributes.image.data.attributes.url}`}
           alt=''
         />
       </Link>
