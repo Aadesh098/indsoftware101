@@ -1,10 +1,11 @@
 import React from 'react';
 // link
 import { Link } from 'react-router-dom';
+const backendURL = process.env.REACT_APP_PUBLIC_STRAPI_URL;
 
 const Product = ({ product }) => {
-  // console.log(product);
   return (
+    
     <Link to={`/product/${product.id}`}>
       <div className='grad w-full h-[362px] rounded-[8px] overflow-hidden relative group'>
         {/* badge */}
@@ -19,7 +20,7 @@ const Product = ({ product }) => {
         <div className='w-full h-[200px] flex items-center justify-center relative'>
           <img
             className='w-[160px] h-[160px] group-hover:scale-90 transition-all'
-            src={`http://localhost:1337${product.attributes.image.data.attributes.url}`}
+            src={`${backendURL}${product.attributes.image.data.attributes.url}`}
             alt=''
           />
         </div>

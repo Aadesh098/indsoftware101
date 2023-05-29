@@ -64,11 +64,11 @@ const Header = () => {
               onClick={() => setIsOpen(!isOpen)}
               className='relative cursor-pointer ml-4'
             >
-              <SlBag className='text-2xl' />
+              {/* <SlBag className='text-2xl' /> */}
               {/* amount */}
-              <div className='bg-accent text-primary absolute w-[18px] h-[18px] rounded-full top-3 -right-1 text-[13px] flex justify-center items-center font-bold tracking-[-0.1em]'>
+              {/* <div className='bg-accent text-primary absolute w-[18px] h-[18px] rounded-full top-3 -right-1 text-[13px] flex justify-center items-center font-bold tracking-[-0.1em]'>
                 {itemsAmount}
-              </div>
+              </div> */}
             </div>
             {/* cart */}
             <div

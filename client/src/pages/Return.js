@@ -8,7 +8,7 @@ const Return = () => {
         {/* text */}
         <div className="flex flex-col lg:flex-row gap-[30px] mb-[30px]">
           <div className="flex-1 lg:max-w-[40%] lg:h-[645px] grad rounded-lg flex justify-center items-center">
-            <img src={retimg} alt="" className="w-full max-w-[65%]" />
+            <img src={retimg} alt="" className="w-full max-w-[75%]" />
           </div>
           <div className="flex-1 bg-primary p-12 xl:p-20 rounded-lg flex flex-col justify-center">
             {/* category title */}

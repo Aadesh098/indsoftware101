@@ -11,7 +11,7 @@ const Vision = () => {
             <img
               src={visimg}
               alt=''
-              className='w-full max-w-[65%]'
+              className='w-full max-w-[75%]'
             />
           </div>
           <div className='flex-1 bg-primary p-12 xl:p-20 rounded-lg flex flex-col justify-center'>

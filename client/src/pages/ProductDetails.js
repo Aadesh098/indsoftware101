@@ -7,6 +7,7 @@ import useFetch from "../hooks/useFetch";
 import RelatedProducts from "../components/RelatedProducts";
 // context
 import { CartContext } from "../context/CartContext";
+const backendURL = process.env.REACT_APP_PUBLIC_STRAPI_URL;
 
 const ProductDetails = () => {
   const { addToCart } = useContext(CartContext);
@@ -26,7 +27,7 @@ const ProductDetails = () => {
         <div className="flex flex-col lg:flex-row gap-[30px] mb-[30px]">
           <div className="flex-1 lg:max-w-[40%] lg:h-[540px] grad rounded-lg flex justify-center items-center">
             <img
-              src={`http://localhost:1337${data[0].attributes.image.data.attributes.url}`}
+              src={`${backendURL}${data[0].attributes.image.data.attributes.url}`}
               alt=""
               className="w-full max-w-[75%]"
             />
@@ -46,55 +47,61 @@ const ProductDetails = () => {
               <div className="text-3xl text-accent font-semibold">
                 {data[0].attributes.price} Rs/month
               </div>
+
               <button
-                onClick={() => addToCart(data, id)}
+                // onClick={() => addToCart(data, id)}
                 className="btn btn-accent"
               >
-                Add to cart
+                 <a
+                  href={data[0].attributes.paymentlink}
+                >
+                  Buy Now
+                </a>
               </button>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-[30px] mb-[25px]">
-          <div className="flex-1 bg-primary p-10 xl:p-20 rounded-lg flex flex-col justify-center">
-            {/* category title */}
-            <div className="uppercase text-accent text-lg font-medium mb-2">
-              {data[0].attributes.shortd}
-            </div>
-            {/* title */}
-            <h2 className="h2 mb-4">{data[0].attributes.title}</h2>
-            {/* description */}
-            <p className="mb-6">{data[0].attributes.description2}</p>
+  <div className="flex-1 bg-primary p-10 xl:p-20 rounded-lg flex flex-col justify-between">
+    {/* category title */}
+    <div className="uppercase text-accent text-lg font-medium mb-2">
+      {data[0].attributes.shortd}
+    </div>
+    {/* title */}
+    <h2 className="h2 mb-4">{data[0].attributes.title}</h2>
+    {/* description */}
+    <p className="mb-6 flex-grow">{data[0].attributes.description2}</p>
 
-            <div className="flex items-center gap-x-8">
-              <div className="text-3xl text-accent font-semibold mt-20px">
-                Official Page Link 
-              </div>
-              <button className="btn2 btn-accent">
-                <a
-                  href={data[0].attributes.urlprop}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Click Here
-                </a>
-              </button>
-            </div>
-          </div>
-          <div className="flex-1 lg:max-w-[60%] lg:h-[400px] grad rounded-lg flex justify-center items-center">
-            <iframe
-              className="rounded-lg"
-              width="95%"
-              height="90%"
-              src={`https://www.youtube.com/embed/${data[0].attributes.video.providerUid}?rel=0&showinfo=0`}
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-              title="YouTube Video"
-            />
-          </div>
-        </div>
+    <div className="flex items-center gap-x-8">
+      <div className="text-3xl text-accent font-semibold mt-20px">
+        Official Page Link
+      </div>
+      <button className="btn2 btn-accent">
+        <a
+          href={data[0].attributes.urlprop}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Click Here
+        </a>
+      </button>
+    </div>
+  </div>
+  <div className="flex-1 lg:max-w-[60%] bg-primary rounded-lg flex justify-center items-center">
+    <iframe
+      className="rounded-lg"
+      width="95%"
+      height="90%" // Set height to 100% to fill the parent container
+      src={`https://www.youtube.com/embed/${data[0].attributes.video.providerUid}?rel=0&showinfo=0`}
+      frameBorder="0"
+      allow="autoplay; encrypted-media"
+      allowFullScreen
+      title="YouTube Video"
+    />
+  </div>
+</div>
+
 
         {/* related products */}
         <RelatedProducts categoryTitle={categoryTitle} />
