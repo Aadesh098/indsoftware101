@@ -26,7 +26,7 @@ const ProductDetails = () => {
         <div className="flex flex-col lg:flex-row gap-[30px] mb-[30px]">
           <div className="flex-1 lg:max-w-[40%] lg:h-[540px] grad rounded-lg flex justify-center items-center">
             <img
-              src={`https://indsoftwareproduction-82wmn.ondigitalocean.app/${data[0].attributes.image.data.attributes.url}`}
+              src={`https://indsoftwareproduction-82wmn.ondigitalocean.app${data[0].attributes.image.data.attributes.url}`}
               alt=""
               className="w-full max-w-[75%]"
             />
