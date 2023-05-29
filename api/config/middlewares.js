@@ -14,7 +14,16 @@ module.exports = [
             "*.vimeo.com",
             "facebook.com",
             "www.facebook.com"
-          ]
+          ],
+          "connect-src": ["'self'", "https:"], // Added connect-src directive
+          "img-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "*.digitaloceanspaces.com"
+          ], // Added img-src directive
+          "media-src": ["'self'", "data:", "blob:"], // Added media-src directive
+          "upgradeInsecureRequests": null, // Added upgradeInsecureRequests directive
         }
       }
     }
