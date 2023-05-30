@@ -18,6 +18,8 @@ const ProductDetails = () => {
   }
   // category title
   const categoryTitle = data[0].attributes.categories.data[0].attributes.title;
+  console.log(`${data[0].attributes.image.url}`);
+
 
   return (
     <div className="mb-16 pt-44 lg:pt-[30px] xl:pt-0">
@@ -26,7 +28,7 @@ const ProductDetails = () => {
         <div className="flex flex-col lg:flex-row gap-[30px] mb-[30px]">
           <div className="flex-1 lg:max-w-[40%] lg:h-[540px] grad rounded-lg flex justify-center items-center">
           <img
-             src={`${product.attributes.image.data.attributes.url}`}
+              src={`${data[0].attributes.image.url}`}
               alt=""
               className="w-full max-w-[75%]"
             />
