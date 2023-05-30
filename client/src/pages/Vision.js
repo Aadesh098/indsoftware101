@@ -23,7 +23,7 @@ const Vision = () => {
             <h2 className='h2 mb-4'>Our Vision</h2>
             {/* description */}
             <p className='mb-12'>At IndSoftware, our vision is to bridge the gap between
-             software companies and students in India by making quality 
+             software companies and university students by making quality 
              education and digital services accessible and affordable.
               We understand the challenges students face in pursuing their dreams due 
               to the difference in purchasing power. 
