@@ -25,8 +25,9 @@ const ProductDetails = () => {
         {/* text */}
         <div className="flex flex-col lg:flex-row gap-[30px] mb-[30px]">
           <div className="flex-1 lg:max-w-[40%] lg:h-[540px] grad rounded-lg flex justify-center items-center">
+            let var = {`https://indsoftwareproduction-82wmn.ondigitalocean.app/${data[0].attributes.image.data.attributes.url}`}
             <img
-              src={`https://indsoftwareproduction-82wmn.ondigitalocean.app/${data[0].attributes.image.data.attributes.url}`}
+              src="var"
               alt=""
               className="w-full max-w-[75%]"
             />
