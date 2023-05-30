@@ -18,7 +18,7 @@ const ProductDetails = () => {
   }
   // category title
   const categoryTitle = data[0].attributes.categories.data[0].attributes.title;
-  console.log(`${data[0].attributes.image.url}`);
+  console.log(`${data[0].attributes.image.data.attributes.url}`);
 
 
   return (
