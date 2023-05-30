@@ -18,7 +18,7 @@ const Product = ({ product }) => {
           {product.attributes.image && (
             <img
               className='w-[160px] h-[160px] group-hover:scale-90 transition-all'
-              src={`https://indsoftwareproduction-82wmn.ondigitalocean.app${product.attributes.image.data.attributes.url}`}
+              src={`${product.attributes.image.data.attributes.url}`}
               alt=''
             />
           )}
