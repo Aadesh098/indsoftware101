@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Product = ({ product }) => {
-  console.log(`Image src: https://indsoftwareproduction-82wmn.ondigitalocean.app${product.attributes.image.data.attributes.url}`);
+  console.log(`${product.attributes.image.data.attributes.url}`);
   return (
     <Link to={`/product/${product.id}`}>
       <div className='grad w-full h-[362px] rounded-[8px] overflow-hidden relative group'>
