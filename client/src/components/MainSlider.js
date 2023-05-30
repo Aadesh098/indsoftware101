@@ -69,7 +69,7 @@ const MainSlider = () => {
                     {slide.titlePart3}
                   </div>
                   <button className='btn btn-accent mx-auto lg:mx-0'>
-                    <Link to={'/products/10'}> Shop Now  </Link>
+                    <Link to={'/products/1'}> Shop Now  </Link>
                   </button>
                 </div>
                 {/* img */}

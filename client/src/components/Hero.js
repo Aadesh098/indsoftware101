@@ -29,7 +29,7 @@ const Hero = () => {
                 <div className='text-[20px] uppercase font-medium leading-tight mb-4'>
                   Save upto 57% on our Algo Expert Courses
                 </div>
-                <Link to={'/products/10'} className='uppercase text-accent'>
+                <Link to={'/products/1'} className='uppercase text-accent'>
                   Shop now
                 </Link>
               </div>
@@ -47,7 +47,7 @@ const Hero = () => {
                 <div className='text-[20px] uppercase font-medium leading-tight mb-4'>
                 Save upto 35% on Speechify subscriptions
                 </div>
-                <Link to={'/products/10'} className='uppercase text-accent'>
+                <Link to={'/products/1'} className='uppercase text-accent'>
                   Shop now
                 </Link>
               </div>
