@@ -22,7 +22,7 @@ const Vision = () => {
             {/* title */}
             <h2 className='h2 mb-4'>Our Vision</h2>
             {/* description */}
-            <p className='mb-12'>At IndSoftware, our vision is to bridge the gap between international
+            <p className='mb-12'>At IndSoftware, our vision is to bridge the gap between
              software companies and students in India by making quality 
              education and digital services accessible and affordable.
               We understand the challenges students face in pursuing their dreams due 
@@ -30,7 +30,7 @@ const Vision = () => {
               <br></br>
               <br></br>
                With our dedicated team, we strive to negotiate exclusive
-               deals with renowned software companies abroad, enabling us to offer courses, self-help subscriptions,
+               deals with renowned software companies national and abroad, enabling us to offer courses, self-help subscriptions,
                 and digital services at a fraction of their original cost. By doing so, we aim to
                  empower students with the knowledge and tools they need to succeed, unlocking their 
                  full potential and shaping a brighter future for India.</p>
