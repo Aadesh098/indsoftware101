@@ -25,7 +25,7 @@ const ContactUs = () => {
               contact information provided below. We would surely reach back in 24 hours.
             </p>
             <ul className="mb-14">
-              <li>Email - aadesh0313@gmail.com</li>
+              <li>Email - aadesh@indsoftware.in</li>
               <li>Phone/WhatsApp - 8800030603</li>
             </ul>
             {/* price & btn */}

@@ -56,7 +56,7 @@ const ProductDetails = () => {
                  <a
                   href={data[0].attributes.paymentlink}
                 >
-                  Buy Now
+                  Join the Waitlist
                 </a>
               </button>
             </div>

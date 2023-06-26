@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaYoutube, FaInstagram, FaTwitter} from 'react-icons/fa';
+import { FaYoutube, FaInstagram, FaFacebook} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -37,14 +37,14 @@ const Footer = () => {
         </div>
         {/* socials */}
         <div className='flex gap-x-6 max-w-max mx-auto text-lg mb-16'>
-          <a href='https://www.youtube.com' className='hover:text-white transition-all'>
-            <FaYoutube />
-          </a>
-          <a href='https://www.instagram.com' className='hover:text-white transition-all'>
+          <a href='https://www.instagram.com/_indsoftware_/' className='hover:text-white transition-all'>
             <FaInstagram />
           </a>
-          <a href='https://www.twitter.com' className='hover:text-white transition-all'>
-            <FaTwitter />
+          <a href='https://www.youtube.com/channel/UCApQohhdp15MngK2-c2wxLA' className='hover:text-white transition-all'>
+            <FaYoutube />
+          </a>
+          <a href='https://www.facebook.com/IndSoftwarez' className='hover:text-white transition-all'>
+            <FaFacebook />
           </a>
         </div>
       </div>

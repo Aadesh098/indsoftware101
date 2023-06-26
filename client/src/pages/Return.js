@@ -13,33 +13,32 @@ const Return = () => {
           <div className="flex-1 bg-primary p-12 xl:p-20 rounded-lg flex flex-col justify-center">
             {/* category title */}
             <div className="uppercase text-accent text-lg font-medium mb-2">
-              Hassle Free Returns in 24 hrs
+              Hassle Free Refund in 24 hrs
             </div>
             {/* title */}
             <h2 className="h2 mb-4">Return Policy</h2>
             {/* description */}
             <p className="mb-12">
               We apologize for any inconvenience you may have experienced with
-              your purchase from IndSoftware. We understand that sometimes
+              your purchase at IndSoftware. We understand that sometimes
               products may not meet your expectations or there may be unforeseen
-              circumstances that require a return. In such cases, we have a
+              circumstances that require a refund. In such cases, we have a
               hassle-free return policy in place to ensure your satisfaction.
               <br></br>
               <br></br>
               To initiate a return, please email your return request to
-              the mentioed email. Kindly include your order details, including
-              the product name, order number. Our
+              the mentioed email. Kindly include the necessary details and our
               dedicated team will promptly review your request
-              and guide you through the return process. <br></br> <br></br>
+              and guide you through the refund process. <br></br> <br></br>
               Email - aadesh0313@gmail.com  <br></br>
               Phone / WhatsApp - 8800030603 <br></br> <br></br>
-              *Return should be initiated within 2 months of the Purchase Date*
+              *Return should be initiated within 15 Days of the Purchase Date*
             </p>
             {/* price & btn */}
             <div className="flex items-center gap-x-8">
               {/* price */}
               <div className="text-3xl text-accent font-semibold">
-                Easy Returns, No Questions Asked
+                Easy Refunds, No Questions Asked
               </div>
             </div>
           </div>
