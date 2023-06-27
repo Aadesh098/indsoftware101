@@ -38,7 +38,7 @@ const Vision = () => {
             <div className='flex items-center gap-x-8'>
               {/* price */}
               <div className='text-3xl text-accent font-semibold'>
-                Premium Education, Affordable Access
+                Premium Software at the Price of Dust
               </div>
             </div>
           </div>
