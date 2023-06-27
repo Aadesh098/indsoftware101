@@ -28,7 +28,7 @@ const Products = () => {
           <main>
             {/* title */}
             <div className='py-3 text-xl uppercase text-center lg:text-left'>
-               {title}  
+               {title} 
             </div>
             {/* product grid */}
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[15px] md:gap-[30px]'>
