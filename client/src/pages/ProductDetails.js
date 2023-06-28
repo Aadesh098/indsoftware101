@@ -41,7 +41,8 @@ const ProductDetails = () => {
             {/* title */}
             <h2 className="h2 mb-4">{data[0].attributes.title}</h2>
             {/* description */}
-            <p className="mb-12">{data[0].attributes.description}</p>
+            <p className="mb-6">{data[0].attributes.description}</p>
+            <p className="mb-12"><b>*{data[0].attributes.shortd}</b></p>
             {/* price & btn */}
             <div className="flex items-center gap-x-8">
               {/* price */}
@@ -56,7 +57,7 @@ const ProductDetails = () => {
                  <a
                   href={data[0].attributes.paymentlink}
                 >
-                  Buy Now
+                  Join the Waitlist
                 </a>
               </button>
             </div>
@@ -67,7 +68,7 @@ const ProductDetails = () => {
   <div className="flex-1 bg-primary p-10 xl:p-20 rounded-lg flex flex-col justify-between">
     {/* category title */}
     <div className="uppercase text-accent text-lg font-medium mb-2">
-      {data[0].attributes.shortd}
+      Key Pointers
     </div>
     {/* title */}
     <h2 className="h2 mb-4">{data[0].attributes.title}</h2>
