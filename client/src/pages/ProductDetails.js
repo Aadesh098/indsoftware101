@@ -76,7 +76,7 @@ const ProductDetails = () => {
 
     <div className="flex items-center gap-x-8">
       <div className="text-3xl text-accent font-semibold mt-20px">
-        Official Page Link
+        Official Page 
       </div>
       <button className="btn2 btn-accent">
         <a
