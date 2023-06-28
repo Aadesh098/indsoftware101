@@ -23,19 +23,22 @@ const Product = ({ product }) => {
             alt=''
           />
         </div>
-        {/* text */}
+        {/* {text} */}
         <div className='px-6 pb-8 flex flex-col'>
-          {/* category title */}
-          <div className='text-sm text-accent capitalize mb-2'>
-            {product.attributes.categories.data[0].attributes.title}
-          </div>
-          {/* title */}
-          <div className='text-[15px] mb-4 lg:mb-9'>
-            {product.attributes.title.substring(0, 35)}...
-          </div>
-          {/* price */}
-          <div className='text-lg text-accent'>{product.attributes.price} Rs/month</div>
-        </div>
+  {/* category title */}
+  <div className='text-sm text-accent capitalize mb-2'>
+    {product.attributes.categories.data[0].attributes.title}
+  </div>
+  {/* title */}
+  <div className='text-[15px] mb-4 lg:mb-9 overflow-hidden'>
+    <div className='line-clamp-2'>
+      {product.attributes.title}
+    </div>
+  </div>
+  {/* price */}
+  <div className='text-lg text-accent'>{product.attributes.price} Rs/month</div>
+</div>
+
       </div>
     </Link>
   );
