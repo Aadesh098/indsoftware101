@@ -50,7 +50,7 @@ const Header = () => {
               <Link to={'/vision'}> Our Vision </Link> 
             </div>
             <div className='hidden xl:flex uppercase m-4'>
-              <Link to={'/products/1'}>Products</Link>
+              <Link to={'/products/31'}>Products</Link>
             </div>
 
             {/* <div className='hidden xl:flex uppercase m-4'>

@@ -27,9 +27,9 @@ const Hero = () => {
               {/* text */}
               <div className='flex flex-col max-w-[144px] h-full justify-center'>
                 <div className='text-[20px] uppercase font-medium leading-tight mb-4'>
-                  Save upto 57% on our Algo Expert Courses
+                  Save upto 60% on Blockchain Courses
                 </div>
-                <Link to={'/products/1'} className='uppercase text-accent'>
+                <Link to={'/products/36'} className='uppercase text-accent'>
                   Shop now
                 </Link>
               </div>
@@ -45,9 +45,9 @@ const Hero = () => {
               {/* text */}
               <div className='flex flex-col max-w-[144px] h-full justify-center'>
                 <div className='text-[20px] uppercase font-medium leading-tight mb-4'>
-                Save upto 35% on Speechify subscriptions
+                Save upto 75% on the Data Science Courses
                 </div>
-                <Link to={'/products/1'} className='uppercase text-accent'>
+                <Link to={'/products/37'} className='uppercase text-accent'>
                   Shop now
                 </Link>
               </div>

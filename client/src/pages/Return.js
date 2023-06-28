@@ -13,7 +13,7 @@ const Return = () => {
           <div className="flex-1 bg-primary p-12 xl:p-20 rounded-lg flex flex-col justify-center">
             {/* category title */}
             <div className="uppercase text-accent text-lg font-medium mb-2">
-              Hassle Free Returns in 24 hrs
+              Hassle Free Refunds in 24 hrs
             </div>
             {/* title */}
             <h2 className="h2 mb-4">Return Policy</h2>
@@ -27,13 +27,12 @@ const Return = () => {
               <br></br>
               <br></br>
               To initiate a return, please email your return request to
-              the mentioed email. Kindly include your order details, including
-              the product name, order number. Our
+              the mentioed email. Kindly include the necessary details. Our
               dedicated team will promptly review your request
               and guide you through the return process. <br></br> <br></br>
-              Email - aadesh0313@gmail.com  <br></br>
+              Email - aadesh@indsoftware.in <br></br>
               Phone / WhatsApp - 8800030603 <br></br> <br></br>
-              *Return should be initiated within 2 months of the Purchase Date*
+              *Returns should be initiated within 15 Days of the Purchase Date*
             </p>
             {/* price & btn */}
             <div className="flex items-center gap-x-8">

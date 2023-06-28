@@ -19,23 +19,23 @@ const sliderData = [
     pretitle: 'Special offer',
     titlePart1: 'Save upto',
     titlePart2: '80% on',
-    titlePart3: 'Premium Software',
+    titlePart3: 'Premium Courses',
     btnText: 'Shop now',
   },
   {
     img: CameraImg,
     pretitle: 'Special offer',
-    titlePart1: 'Save 20%',
-    titlePart2: 'On your',
-    titlePart3: 'first purchase',
-    btnText: 'Shop now',
-  },
-  {
-    img: CameraImg,
-    pretitle: 'Special offer',
-    titlePart1: 'Exclusive Software',
-    titlePart2: 'At Your ',
+    titlePart1: 'Exclusive Education',
+    titlePart2: 'At your',
     titlePart3: 'Fingertips',
+    btnText: 'Shop now',
+  },
+  {
+    img: CameraImg, 
+    pretitle: 'One Lucky Winner Gets',
+    titlePart1: 'Free Course',
+    titlePart2: 'Access, Join',
+    titlePart3: 'Waitlist Now',
     btnText: 'Shop Now',
   },
 ];
@@ -69,7 +69,7 @@ const MainSlider = () => {
                     {slide.titlePart3}
                   </div>
                   <button className='btn btn-accent mx-auto lg:mx-0'>
-                    <Link to={'/products/1'}> Shop Now  </Link>
+                    <Link to={'/products/31'}> Shop Now  </Link>
                   </button>
                 </div>
                 {/* img */}
