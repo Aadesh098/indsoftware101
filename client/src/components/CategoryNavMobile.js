@@ -11,6 +11,8 @@ const CategoryNavMobile = ({ setCatnavMobile }) => {
     setShowCategories(!showCategories);
   };
 
+  const sortedData = data?.sort((a, b) => a.id - b.id);
+
   return (
     <div className="w-full h-full bg-primary p-8">
       <div
@@ -31,7 +33,7 @@ const CategoryNavMobile = ({ setCatnavMobile }) => {
         {/* Further Navigation Section */}
         {showCategories && (
           <div className="pl-4">
-            {data?.map((category) => (
+            {sortedData?.map((category) => (
               <Link
                 to={`/products/${category.id}`}
                 className="block uppercase font-medium"
