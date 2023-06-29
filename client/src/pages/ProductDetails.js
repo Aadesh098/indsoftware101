@@ -18,7 +18,7 @@ const ProductDetails = () => {
   }
   // category title
   const categoryTitle = data[0].attributes.categories.data[0].attributes.title;
-  const buttonText = categoryTitle === "Coupon Codes" ? "Buy Now" : "Join the Waitlist";
+  const buttonText = categoryTitle === "Coupon" ? "Buy Now" : "Join the Waitlist";
 
   return (
     <div className="mb-16 pt-44 lg:pt-[30px] xl:pt-0">
@@ -45,13 +45,13 @@ const ProductDetails = () => {
             {/* price & btn */}
             <div className="flex items-center gap-x-8">
               {/* price */}
-              <div className="text-3xl text-accent font-semibold">
+              <div className="text-2xl text-accent font-semibold">
                 {data[0].attributes.price} Rs/month
               </div>
 
               <button
                 // onClick={() => addToCart(data, id)}
-                className="btn btn-accent"
+                className="btn2 btn-accent"
               >
                  <a
                   href={data[0].attributes.paymentlink}
@@ -75,7 +75,7 @@ const ProductDetails = () => {
     <p className="mb-6 flex-grow">{data[0].attributes.description2}</p>
 
     <div className="flex items-center gap-x-8">
-      <div className="text-3xl text-accent font-semibold mt-20px">
+      <div className="text-2xl text-accent font-semibold mt-20px">
         Official Page 
       </div>
       <button className="btn2 btn-accent">
@@ -102,8 +102,6 @@ const ProductDetails = () => {
     />
   </div>
 </div>
-
-
         {/* related products */}
         <RelatedProducts categoryTitle={categoryTitle} />
       </div>
