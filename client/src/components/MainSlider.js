@@ -23,14 +23,6 @@ const sliderData = [
     btnText: 'Shop now',
   },
   {
-    img: CameraImg,
-    pretitle: 'Special offer',
-    titlePart1: 'Exclusive Education',
-    titlePart2: 'At your',
-    titlePart3: 'Fingertips',
-    btnText: 'Shop now',
-  },
-  {
     img: CameraImg, 
     pretitle: 'One Lucky Winner Gets',
     titlePart1: 'Free Course',
@@ -38,6 +30,14 @@ const sliderData = [
     titlePart3: 'Waitlist Now',
     btnText: 'Shop Now',
   },
+  {
+    img: CameraImg,
+    pretitle: 'Special offer',
+    titlePart1: 'Exclusive Education',
+    titlePart2: 'At your',
+    titlePart3: 'Fingertips',
+    btnText: 'Shop now',
+  }
 ];
 
 const MainSlider = () => {
