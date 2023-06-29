@@ -23,7 +23,7 @@ const Header = () => {
           {/* menu */}
           <div
             onClick={() => setCatnavMobile(true)}
-            className="text-3xl xl:hidden cursor-pointer"
+            className="text-3xl py-2 xl:hidden cursor-pointer"
           >
             <FiMenu />
           </div>
@@ -60,7 +60,7 @@ const Header = () => {
               <Link to={"/contactus"}>Contact Us</Link>
             </div>
             {/* cart icon */}
-            <div className="relative cursor-pointer ml-4 lg:hidden">
+            <div className="relative cursor-pointer ml-4 xl:hidden">
               <Link to={"/products/31"}>
                 <BsBriefcaseFill className="text-2xl" />
               </Link>
@@ -77,4 +77,3 @@ const Header = () => {
 };
 
 export default Header;
-
