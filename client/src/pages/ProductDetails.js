@@ -18,8 +18,7 @@ const ProductDetails = () => {
   }
   // category title
   const categoryTitle = data[0].attributes.categories.data[0].attributes.title;
-  console.log(`${data[0].attributes.image.data.attributes.url}`);
-
+  const buttonText = categoryTitle === "Coupon Codes" ? "Buy Now" : "Join the Waitlist";
 
   return (
     <div className="mb-16 pt-44 lg:pt-[30px] xl:pt-0">
@@ -57,7 +56,7 @@ const ProductDetails = () => {
                  <a
                   href={data[0].attributes.paymentlink}
                 >
-                  Join the Waitlist
+                   {buttonText}
                 </a>
               </button>
             </div>
