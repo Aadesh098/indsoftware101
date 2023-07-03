@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Outlet } from 'react-router-dom';
 import { renderToStaticMarkup } from 'react-dom/server';
 
 // pages
@@ -27,21 +27,11 @@ const Layout = () => {
   );
 };
 
-const router = createBrowserRouter([
-  {
-    element: <Layout />,
-    children: [
-      { path: '/', element: <Home /> },
-      { path: '/vision', element: <Vision /> },
-      { path: '/products/:id', element: <Products /> },
-      { path: '/contactUs', element: <ContactUs /> },
-      { path: '/product/:id', element: <ProductDetails /> },
-      { path: '/search', element: <Search /> },
-      { path: '/return', element: <Return /> },
-      // { path: '/myprofile', element: <MyProfile /> },
-    ],
-  },
-]);
+const router = (
+  <Router>
+    <Layout />
+  </Router>
+);
 
 const generateSitemapXML = () => {
   const routes = router.getRoutes(); 
@@ -73,7 +63,9 @@ const App = () => {
 
   return (
     <div>
-      <RouterProvider router={router} />
+      <Router>
+        <Outlet />
+      </Router>
       <textarea
         style={{ width: '100%', height: '500px' }}
         value={sitemap}
