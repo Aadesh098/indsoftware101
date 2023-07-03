@@ -54,7 +54,7 @@ const ProductDetails = () => {
 
               <button
                 // onClick={() => addToCart(data, id)}
-                className="btn2 btn-accent"
+                className="btn2 md:btn btn-accent"
               >
                 <a href={data[0].attributes.paymentlink}>{buttonText}</a>
               </button>
