@@ -4,6 +4,6 @@
  * category controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const { CoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::category.category');
