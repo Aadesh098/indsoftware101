@@ -44,13 +44,13 @@ const router = createBrowserRouter([
 ]);
 
 const generateSitemapXML = () => {
-  const routes = router.getRoutes(); // Get all the routes defined in the router
+  const routes = router.getRoutes(); 
 
   const sitemap = `
     <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${routes.map(route => {
-        const url = `https://www.indsoftware.in${route.path}`; // Update with your actual domain
+        const url = `https://indsoftware.in${route.path}`; // Update with your actual domain
         return `
           <url>
             <loc>${url}</loc>
@@ -58,6 +58,10 @@ const generateSitemapXML = () => {
           </url>
         `;
       }).join('')}
+      <url>
+        <loc>https://indsoftware.in/sitemap.xml</loc>
+        <lastmod>${new Date().toISOString()}</lastmod>
+      </url>
     </urlset>
   `;
 
