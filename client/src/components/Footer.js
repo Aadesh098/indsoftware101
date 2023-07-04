@@ -40,10 +40,10 @@ const Footer = () => {
         <a href='https://www.facebook.com/IndSoftwarez' className='hover:text-white transition-all'>
             <FaFacebook />
           </a>
-          <a href='https://www.youtube.com/channel/UCApQohhdp15MngK2-c2wxLA' className='hover:text-white transition-all'>
+          <a href='https://www.youtube.com/@IndSoftware_' className='hover:text-white transition-all'>
           <FaYoutube />
           </a>
-          <a href='https://www.instagram.com/_indsoftware_/' className='hover:text-white transition-all'>
+          <a href='https://www.instagram.com/indsoftware._/' className='hover:text-white transition-all'>
           <FaInstagram />
           </a>
           <a href='https://www.linkedin.com/company/indsoftwarez/' className='hover:text-white transition-all'>
